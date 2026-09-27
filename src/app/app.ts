@@ -17,3 +17,4 @@ import { PiedPage } from './composants/pied-page/pied-page';
 export class App {
   protected readonly title = signal('catalogue-cours');
 }
+ 
