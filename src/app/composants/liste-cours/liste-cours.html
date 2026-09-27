@@ -1,0 +1,10 @@
+<section class="liste-cours">
+    @for (c of cours; track c.titre) {  <!-- pour chaque element c qui se trouve dans le tableau cours. track c.titre = Angular utilise le titre pour suivre/identifier chaque élément de la liste. -->
+        <article class="carte-cours">
+            <h2>{{ c.titre }}</h2>
+            <p>Catégorie : {{ c.categorie }}</p>
+            <p>Durée : {{ c.duree }}</p>
+            <p>Places disponibles : {{ c.places }}</p>
+        </article>
+    }
+</section>
