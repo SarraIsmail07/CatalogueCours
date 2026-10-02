@@ -1,3 +1,12 @@
+
 <app-en-tete></app-en-tete>
-<app-liste-cours></app-liste-cours>
+
+<app-liste-cours
+  (coursSelectionne)="onSelectionCours($event)">
+</app-liste-cours>
+
+<app-detail-cours
+  [cours]="coursSelectionne">
+</app-detail-cours>
+
 <app-pied-page></app-pied-page>
