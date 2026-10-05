@@ -1,12 +1,18 @@
+<div class="app-container">
+    <header>
+        <app-en-tete></app-en-tete>
+    </header>
 
-<app-en-tete></app-en-tete>
+    <section>
+        <app-liste-cours (coursSelectionne)="onSelectionCours($event)"></app-liste-cours>
+    </section>
+    
+    <aside>
+        <app-detail-cours [cours]="coursSelectionne"></app-detail-cours>
+    </aside>
 
-<app-liste-cours
-  (coursSelectionne)="onSelectionCours($event)">
-</app-liste-cours>
+    <footer>
+        <app-pied-page></app-pied-page>
+    </footer>
+</div>
 
-<app-detail-cours
-  [cours]="coursSelectionne">
-</app-detail-cours>
-
-<app-pied-page></app-pied-page>

@@ -1,0 +1,28 @@
+.app-container{
+    width: 1200px;
+}
+header{
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+section{
+    display: block;
+    width: 70%;
+    margin-top: 20px;
+    float: left;
+}
+aside{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    float: right;
+}
+footer{
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
