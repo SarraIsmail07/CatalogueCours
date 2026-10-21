@@ -1,3 +1,11 @@
+<div class="controles">
+    <input [(ngModel)]="recherche" placeholder="Rechercher un cours...">
+    <select [(ngModel)]="tri">
+        <option value="asc">Titre A → Z</option>
+        <option value="desc">Titre Z → A</option>
+    </select>
+</div>
+
 <section class="liste-cours">
     @for (c of cours; track c.titre) {  <!-- pour chaque element c qui se trouve dans le tableau cours. track c.titre = Angular utilise le titre pour suivre/identifier chaque élément de la liste. -->
         <article class="carte-cours" [class.actif]="c === coursActif" (click)="selectionner(c)">>
@@ -8,3 +16,4 @@
         </article>
     }
 </section>
+
