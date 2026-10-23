@@ -3,15 +3,19 @@ import { Tete } from './composants/tete/tete';
 import { ListeCours } from './composants/liste-cours/liste-cours';
 import { Pied } from './composants/pied/pied';
 import { DetailCours } from './composants/detail-cours/detail-cours';
-import { Cours } from './composants/liste-cours/liste-cours';
+import { Cours } from './donnees/cours';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   imports: [
     DetailCours,
     Tete,
     ListeCours,
-    Pied
-  ],
+    Pied,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
+],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
