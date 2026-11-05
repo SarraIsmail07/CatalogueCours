@@ -6,6 +6,7 @@ import { DetailCours } from './composants/detail-cours/detail-cours';
 import { Cours } from './donnees/cours';
 import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
 import { Session } from './services/session';
+import { Inscriptions } from './services/inscriptions';
 
 @Component({
   imports: [
@@ -31,6 +32,7 @@ export class App {
 
   session = inject(Session); 
   private router = inject(Router); 
+  inscriptions = inject(Inscriptions);
   
   deconnecter() { 
     this.session.deconnecter(); 
